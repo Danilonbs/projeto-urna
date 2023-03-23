@@ -7,11 +7,16 @@ let numeros = document.querySelector('.d-1-3');
 
 
 let = etapaAtual = 0;
+let numero = '';
 
 function comecarEtapa() {
     let etapa = etapas[etapaAtual];
 
     let numeroHTML = '';
+
+    for(let i=0; i<etapa.numeros;i++) {
+        numeroHTML += '<div class="numero"></div>';
+    }
 
     seuVotoPara.style.display ='none';
     cargo.innerHTML = etapa.titulo;
@@ -21,8 +26,15 @@ function comecarEtapa() {
     numeros.innerHTML = numeroHTML;
 }
 
+function atualizaInterface() {
+
+}
+
 function clicou(n) {
-    alert("Clicou em " + n);
+    let numero = document.querySelector('.numero.pisca');
+    if(numero !== null) {
+        numero.i
+    } 
 }
 
 function branco() {
